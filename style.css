@@ -1,0 +1,14 @@
+body {
+  background: black;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+section {
+  margin: 90px auto;
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+}
