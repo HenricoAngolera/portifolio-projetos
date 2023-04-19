@@ -1,14 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: rgb(48, 48, 48);
+  --secondary-color: rgb(88, 88, 88);
+
+  --background-color: rgb(2, 1, 63);
+}
+
 body {
-  background: black;
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
+  color: white;
+
+  background-color: var(--background-color);
+}
+
+.page {
+  width: 450px;
+  margin: 0 auto;
 }
 
 section {
-  margin: 90px auto;
+  padding-bottom: 20px;
 }
 
-h1 {
-  font-size: 60px;
+section h2 {
+  text-align: center;
+  padding: 30px 0;
+}
+
+nav {
+  padding: 20px;
+  background-color: black;
+  display: flex;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+a {
+  text-decoration: none;
   color: white;
+
+  transition: 0.4s;
+}
+
+a:hover{
+  font-weight: bold;
+}
+
+#home {
+  padding-top: 72px;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+#home p {
+  margin-block: 30px;
+}
+
+#home img {
+  width: 300px;
+  border-radius: 999px;
+  border: 1px black solid;
+}
+
+#about {
+  padding-inline: 30px;
+
+  background-color: var(--secondary-color);
+
+  line-height: 30px;
+}
+
+.techs {
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+
+  color: rgb(202, 202, 202);
+}
+
+#projects {
+  background-color: var(--primary-color);
+}
+
+#projects .cards {
+  display: flex;
+  flex-direction: column;
+
+  gap: 100px;
+}
+
+#projects .cards .card {
+  width: 430px;
+  margin: 0 auto;
+  border-radius: 10px;
+
+  background-color: var(--secondary-color);
+}
+
+#projects .cards .card img {
+  width: 430px;
+  border-radius: 10px 10px 0 0;
+
+}
+
+.card .project_details {
+  margin-left: 20px;
+  line-height: 24px;
+}
+
+.card a {
+  background-color: gray;
+  border-radius: 20px;
+  padding-block: 2px;
+
+  transition: 0.4s;
+}
+
+#projects .information {
+  width: 300px;
+  text-align: center;
+
+  margin: 50px auto 0;
+}
+
+#projects .information a {
+  color: rgb(53, 148, 226);
+
+  transition: 0.4s;
+}
+
+#contact {
+  background-color: var(--secondary-color);
+}
+
+#contact p {
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+#contact .social-webs {
+  margin-left: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 200px;
+  margin: 0 auto;
+}
+
+#contact .social-web {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#contact .social-web img {
+  width: 20px;
+}
+
+#contact .social-web button {
+  width: 120px;
+
+  cursor: pointer;
+
+  border: none;
+  background: none;
+  color: white;
+
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+#contact .social-web button#github:hover {
+  background: black;
+}
+
+#contact .social-web button#linkedin:hover {
+  background: #0e76a8;
+}
+
+#contact .social-web button#instagram:hover {
+  background: #E1306C;
+}
+
+#contact .social-web button#youtube:hover {
+  background: #c4302b;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  padding: 20px;
 }
