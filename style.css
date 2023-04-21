@@ -150,6 +150,8 @@ a:hover{
 #contact p {
   margin-left: 60px;
   margin-bottom: 30px;
+
+  font-size: 20px;
 }
 
 #contact .social-webs {
@@ -163,10 +165,9 @@ a:hover{
   margin: 0 auto;
 }
 
-#contact .social-web {
+#contact .social-web a {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 #contact .social-web img {
@@ -206,4 +207,64 @@ footer {
   text-align: center;
   background-color: black;
   padding: 20px;
+}
+
+@media (min-width: 1024px) {
+  .page {
+    width: 1024px;
+  }
+
+  nav {
+    padding-left: 200px;
+  }
+
+  #home {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #home .text {
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  #home img {
+    width: 400px;
+  }
+
+  #about {
+    padding-inline: 100px;
+  }
+
+  #projects .cards {
+    display: grid;
+    grid-template-areas: 
+      'A B'
+      'C D';
+    gap: 30px;
+  }
+
+  #contact .social-webs  {
+    flex-direction: row;
+    margin: 0;
+    margin-left: 100px;
+    width: 800px;
+  }
+
+  #contact .social-web img {
+    width: 40px;
+  }
+  
+  #contact .social-web button {
+    width: 150px;
+    font-size: 15px;
+  }
 }
